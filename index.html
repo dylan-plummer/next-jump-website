@@ -4,6 +4,12 @@
 <title>Next Jump App</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
@@ -13,19 +19,19 @@ h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
 body {font-family: "Open Sans"}
 </style>
 </head>
-<body class="w3-light-grey">
+<body class="" style="background: #282828; color: white;">
 
 
 
-<!-- Navbar (sit on top) file comes from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_architect&stacked=h -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button">NextJump App</a>
-    <!-- Float links to the right. Hide them on small screens -->
+  <div class="w3-bar w3-wide w3-padding w3-card" style="background: #181818; color: white;">
+    <a href="index.html" class="w3-bar-item w3-button"><img src="logo_text.png" style="height: 20px;"></a>
+
     <div class="w3-right w3-hide-small">
-      <!-- <a href="#projects" class="w3-bar-item w3-button">About</a>
+      <a href="#home" class="w3-bar-item w3-button">Download App</a>
       <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a> -->
+      <a href="#howitworks" class="w3-bar-item w3-button">How it Works</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     </div>
   </div>
 </div>
@@ -35,31 +41,48 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-content" style="max-width:1600px">
 
 	<div style="height: 50px;" id="home"></div>
-  <!-- Image header -->
-  <header class="w3-display-container w3-wide">
-    <!-- <img class="w3-image" src="https://www.w3schools.com/w3images/jane.jpg" alt="Fashion Blog" width="1600" height="1060"> -->
-		<!-- <video class="w3-image" width="1600" height="1060" autoplay muted loop>
-			<source src="video.mp4" type="video/mp4">
-			Your browser does not support the video tag.
-		</video> -->
-    <!-- <div style="width: 1600px; height: 1060px;">
-          <iframe width="1600" height="1060" src="https://www.youtube.com/embed/MKA1wz0PYTU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </div>
-    <div class="w3-display-left w3-padding-large">
-      <h1 class="w3-jumbo w3-text-black w3-hide-small"><b>NextJump</b></h1>
-      <h6><a class="w3-button w3-gray w3-text-black w3-padding-large w3-large w3-opacity w3-hover-opacity-off" href="#">DOWNLOAD FOR IOS</a></h6>
-    </div> -->
-  </header>
 
-  <div class="w3-container w3-padding-32" id="about">
+  <div class="w3-container w3-padding-32">
 
-    <h1 class="w3-jumbo w3-text-black w3-hide-small"><b>NextJump</b></h1>
-    <h6><a class="w3-button w3-gray w3-text-black w3-padding-large w3-large w3-opacity w3-hover-opacity-off" href="#">DOWNLOAD FOR IOS</a></h6>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+      <div style="display: flex; flex-direction: column; margin-right: auto; margin-left: auto;">
+        <div class="w3-center">
+          <a href="#"><img style="max-height: 200px; max-width: 100vw" src="logo_full.png"></a>
+        </div>
+        <div class="w3-center">
+          <a href="#"><h6 class="w3-button w3-light-gray w3-text-black w3-padding-large w3-large w3-opacity w3-hover-opacity-off">DOWNLOAD FOR IOS</h6></a>
+        </div>
+      </div>
+      <div class="w3-hide-small" style="margin-right: auto; margin-left: auto;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/MKA1wz0PYTU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="w3-hide-medium w3-hide-large" style="margin-right: auto; margin-left: auto;">
+        <iframe width="280" height="157" src="https://www.youtube.com/embed/MKA1wz0PYTU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div id="about" style="height: 50px;"></div>
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
       occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
       laboris nisi ut aliquip ex ea commodo consequat.
     </p>
+    <div id="howitworks" style="height: 50px;"></div>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">How it works</h3>
+    <script
+      type="module"
+      src="https://gradio.s3-us-west-2.amazonaws.com/3.23.0/gradio.js"
+    ></script>
+    <gradio-app src="https://dylanplummer-ropenet.hf.space"></gradio-app>
+
+    <div id="contact" style="height: 50px;"></div>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+
   </div>
 
 
