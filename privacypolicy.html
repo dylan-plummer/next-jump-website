@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>NextJump App</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button">NextJump App</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <!-- <a href="#projects" class="w3-bar-item w3-button">About</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a> -->
+    </div>
+  </div>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+	<div style="height: 50px;" id="home"></div>
+  <!-- Image header -->
+
+  <div class="w3-container w3-padding-32" id="about">
+		<h1>Privacy Policy</h1>
+		<pre>
+Effective Date: July 21, 2023
+Welcome to NextJump, a jump rope tracking application ("App") provided by Lumos Motion, LLC. ("Lumos Motion", "we", "us" or "our"). Your privacy is critically important to us, and this Privacy Policy outlines what data we collect, how we use it, and the choices you have concerning your data.
+1. Data Collection and Use
+We collect and use the following types of information:
+1.1 Personal Data
+We may ask you to provide us with certain personally identifiable information ("Personal Data") to use NextJump. This may include, but is not limited to, your email address. We use this data to provide and maintain the App, to notify you about changes to our App, and to allow you to participate in interactive features of our App when you choose to do so.
+1.2 Usage Data
+When you access the App by or through a mobile device, we may collect certain information automatically, including, but not limited to, the type of mobile device you use, your mobile device's unique device ID, the IP address of your mobile device, your mobile operating system, and other diagnostic data ("Usage Data").
+1.3 Video Data
+With your permission, we may record and store video data through your device's camera while using the App to track your jump rope performance ("Video Data"). We may send recorded videos for feedback to improve your experience.
+2. Data Sharing and Transfer
+2.1 We may share your information with third-party partners who assist us in operating the App, conducting our business, or servicing you, as long as those parties agree to keep this information confidential.
+2.2 If you are located outside of the United States and choose to provide information to us, please note that we transfer the information, including Personal Data, to the United States and process it there.
+3. Security
+The security of your data is important to us, but remember that no method of transmission over the internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.
+4. Links to Other Sites
+Our App may contain links to other sites that are not operated by us. If you click on a third-party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit.
+5. Children's Privacy
+Our App does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If you are a parent or guardian and you are aware that your child has provided us with Personal Data, please contact us.
+6. Changes to This Privacy Policy
+We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
+7. Contact Us
+If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at nextjumpapp@gmail.com.
+By using NextJump, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our App. Your continued use of the App following the posting of changes to this policy will be deemed your acceptance of those changes.
+Lumos Motion, LLC.
+		</pre>
+	</div>
+
+
+<!-- END w3-content -->
+</div>
+
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
