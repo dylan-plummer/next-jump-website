@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>NextJump App</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button">NextJump App</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <!-- <a href="#projects" class="w3-bar-item w3-button">About</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a> -->
+    </div>
+  </div>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+	<div style="height: 50px;" id="home"></div>
+  <!-- Image header -->
+
+  <div class="w3-container w3-padding-32" id="about">
+		<h1>Terms of Use</h1>
+		<pre>
+      Terms of Use for NextJump
+      Effective Date: [Insert Date]
+      
+      Welcome to NextJump, a service provided by Lumos Motion LLC. These Terms of Use govern your use of NextJump and provide important information about your rights, obligations, and restrictions when using our app.
+      
+      1. Acceptance of Terms
+      By downloading, installing, or using NextJump, you agree to be bound by these Terms of Use. If you do not agree with these terms, please do not use NextJump.
+      
+      2. Account Registration
+      You may need to register for an account to access some features of NextJump. You agree to provide accurate, current, and complete information during the registration process.
+      
+      3. Subscription
+      NextJump offers in-app subscriptions that unlock additional features. By subscribing, you agree to pay the specified fees and accept the terms of the subscription.
+      
+      4. Prohibited Conduct
+      You agree not to engage in the following activities:
+      
+      Spamming, including uploading, posting, or submitting any unsolicited or unauthorized material.
+      Submitting false or misleading information on any forms provided within NextJump.
+      5. Intellectual Property
+      All content, features, and functionality within NextJump are owned by Lumos Motion LLC and are protected by international copyright, trademark, patent, and other intellectual property laws.
+      
+      6. Liability Limitation
+      To the maximum extent permitted by law, Lumos Motion LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of NextJump.
+      
+      7. Governing Law and Jurisdiction
+      These Terms of Use shall be governed by the laws of [your jurisdiction]. Any disputes arising from these terms shall be resolved exclusively in the courts of [your jurisdiction].
+      
+      8. Changes to Terms of Use
+      We may modify these Terms of Use at any time. Your continued use of NextJump after modifications have been made constitutes acceptance of the modified terms.
+      
+      9. Contact Us
+      If you have any questions about these Terms of Use, please contact us at [your contact information].
+		</pre>
+	</div>
+
+
+<!-- END w3-content -->
+</div>
+
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
